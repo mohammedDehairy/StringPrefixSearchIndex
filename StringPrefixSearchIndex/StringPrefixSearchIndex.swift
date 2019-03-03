@@ -5,11 +5,11 @@
 
 import Foundation
 
-protocol PrefixSearchAlgorithmProvider {
+public protocol PrefixSearchAlgorithmProvider {
     func create() -> PrefixSearchAlgorithm
 }
 
-struct DefaultPrefixSearchAlgorithmProvider: PrefixSearchAlgorithmProvider {
+public struct DefaultPrefixSearchAlgorithmProvider: PrefixSearchAlgorithmProvider {
     func create() -> PrefixSearchAlgorithm {
         return PrefixBinarySearchAlgorithm()
     }
