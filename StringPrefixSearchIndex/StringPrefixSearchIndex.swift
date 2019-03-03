@@ -15,7 +15,7 @@ struct DefaultPrefixSearchAlgorithmProvider: PrefixSearchAlgorithmProvider {
     }
 }
 
-final class StringPrefixSearchIndex {
+final public class StringPrefixSearchIndex {
     private let searchAlgorithmProvider: PrefixSearchAlgorithmProvider
     private let queue = DispatchQueue(label: "serial_queue")
     private var searchAlgorithms: [PrefixSearchAlgorithm] = []
