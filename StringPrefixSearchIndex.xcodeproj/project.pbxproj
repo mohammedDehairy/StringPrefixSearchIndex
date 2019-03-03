@@ -8,12 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		3D19F734222C17530002C161 /* StringPrefixSearchIndex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D19F72A222C17530002C161 /* StringPrefixSearchIndex.framework */; };
-		3D19F739222C17530002C161 /* StringPrefixSearchIndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19F738222C17530002C161 /* StringPrefixSearchIndexTests.swift */; };
 		3D19F73B222C17530002C161 /* StringPrefixSearchIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D19F72D222C17530002C161 /* StringPrefixSearchIndex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D19F745222C17770002C161 /* PrefixBinarySearchAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19F744222C17770002C161 /* PrefixBinarySearchAlgorithm.swift */; };
+		3D19F747222C17970002C161 /* StringPrefixSearchIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19F746222C17970002C161 /* StringPrefixSearchIndex.swift */; };
+		3D19F749222C17E00002C161 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D19F748222C17E00002C161 /* cities.json */; };
+		3D19F74D222C18150002C161 /* PrefixBinarySearchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19F74A222C18140002C161 /* PrefixBinarySearchTest.swift */; };
+		3D19F74E222C18150002C161 /* CitiesSearchIndexTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19F74B222C18140002C161 /* CitiesSearchIndexTest.swift */; };
+		3D19F751222C18410002C161 /* CityModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19F750222C18400002C161 /* CityModelParser.swift */; };
+		3D19F752222C18540002C161 /* StringPrefixSearchIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19F746222C17970002C161 /* StringPrefixSearchIndex.swift */; };
+		3D19F753222C185A0002C161 /* PrefixBinarySearchAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19F744222C17770002C161 /* PrefixBinarySearchAlgorithm.swift */; };
+		3D19F75D222C18880002C161 /* StringPrefixSearchIndex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D19F72A222C17530002C161 /* StringPrefixSearchIndex.framework */; };
+		3D19F764222C189D0002C161 /* CitiesSearchIndexIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19F763222C189D0002C161 /* CitiesSearchIndexIntegrationTest.swift */; };
+		3D19F766222C18CE0002C161 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19F765222C18CE0002C161 /* CityModel.swift */; };
+		3D19F767222C197A0002C161 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19F765222C18CE0002C161 /* CityModel.swift */; };
+		3D19F768222C19830002C161 /* StringPrefixSearchIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19F746222C17970002C161 /* StringPrefixSearchIndex.swift */; };
+		3D19F769222C19850002C161 /* PrefixBinarySearchAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19F744222C17770002C161 /* PrefixBinarySearchAlgorithm.swift */; };
+		3D19F76A222C198F0002C161 /* CityModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D19F750222C18400002C161 /* CityModelParser.swift */; };
+		3D19F76B222C19C20002C161 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D19F748222C17E00002C161 /* cities.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		3D19F735222C17530002C161 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D19F721222C17530002C161 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D19F729222C17530002C161;
+			remoteInfo = StringPrefixSearchIndex;
+		};
+		3D19F75E222C18880002C161 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3D19F721222C17530002C161 /* Project object */;
 			proxyType = 1;
@@ -27,8 +49,17 @@
 		3D19F72D222C17530002C161 /* StringPrefixSearchIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringPrefixSearchIndex.h; sourceTree = "<group>"; };
 		3D19F72E222C17530002C161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D19F733222C17530002C161 /* StringPrefixSearchIndexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringPrefixSearchIndexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D19F738222C17530002C161 /* StringPrefixSearchIndexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringPrefixSearchIndexTests.swift; sourceTree = "<group>"; };
 		3D19F73A222C17530002C161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D19F744222C17770002C161 /* PrefixBinarySearchAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefixBinarySearchAlgorithm.swift; sourceTree = "<group>"; };
+		3D19F746222C17970002C161 /* StringPrefixSearchIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringPrefixSearchIndex.swift; sourceTree = "<group>"; };
+		3D19F748222C17E00002C161 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		3D19F74A222C18140002C161 /* PrefixBinarySearchTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefixBinarySearchTest.swift; sourceTree = "<group>"; };
+		3D19F74B222C18140002C161 /* CitiesSearchIndexTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesSearchIndexTest.swift; sourceTree = "<group>"; };
+		3D19F750222C18400002C161 /* CityModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityModelParser.swift; sourceTree = "<group>"; };
+		3D19F758222C18880002C161 /* StringPrefixSearchIndexIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringPrefixSearchIndexIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D19F75C222C18880002C161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D19F763222C189D0002C161 /* CitiesSearchIndexIntegrationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesSearchIndexIntegrationTest.swift; sourceTree = "<group>"; };
+		3D19F765222C18CE0002C161 /* CityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +78,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D19F755222C18880002C161 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D19F75D222C18880002C161 /* StringPrefixSearchIndex.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +94,7 @@
 			children = (
 				3D19F72C222C17530002C161 /* StringPrefixSearchIndex */,
 				3D19F737222C17530002C161 /* StringPrefixSearchIndexTests */,
+				3D19F759222C18880002C161 /* StringPrefixSearchIndexIntegrationTests */,
 				3D19F72B222C17530002C161 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +104,7 @@
 			children = (
 				3D19F72A222C17530002C161 /* StringPrefixSearchIndex.framework */,
 				3D19F733222C17530002C161 /* StringPrefixSearchIndexTests.xctest */,
+				3D19F758222C18880002C161 /* StringPrefixSearchIndexIntegrationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +112,8 @@
 		3D19F72C222C17530002C161 /* StringPrefixSearchIndex */ = {
 			isa = PBXGroup;
 			children = (
+				3D19F746222C17970002C161 /* StringPrefixSearchIndex.swift */,
+				3D19F744222C17770002C161 /* PrefixBinarySearchAlgorithm.swift */,
 				3D19F72D222C17530002C161 /* StringPrefixSearchIndex.h */,
 				3D19F72E222C17530002C161 /* Info.plist */,
 			);
@@ -80,10 +123,23 @@
 		3D19F737222C17530002C161 /* StringPrefixSearchIndexTests */ = {
 			isa = PBXGroup;
 			children = (
-				3D19F738222C17530002C161 /* StringPrefixSearchIndexTests.swift */,
+				3D19F765222C18CE0002C161 /* CityModel.swift */,
+				3D19F750222C18400002C161 /* CityModelParser.swift */,
+				3D19F74B222C18140002C161 /* CitiesSearchIndexTest.swift */,
+				3D19F74A222C18140002C161 /* PrefixBinarySearchTest.swift */,
+				3D19F748222C17E00002C161 /* cities.json */,
 				3D19F73A222C17530002C161 /* Info.plist */,
 			);
 			path = StringPrefixSearchIndexTests;
+			sourceTree = "<group>";
+		};
+		3D19F759222C18880002C161 /* StringPrefixSearchIndexIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D19F763222C189D0002C161 /* CitiesSearchIndexIntegrationTest.swift */,
+				3D19F75C222C18880002C161 /* Info.plist */,
+			);
+			path = StringPrefixSearchIndexIntegrationTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +192,24 @@
 			productReference = 3D19F733222C17530002C161 /* StringPrefixSearchIndexTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3D19F757222C18880002C161 /* StringPrefixSearchIndexIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D19F760222C18880002C161 /* Build configuration list for PBXNativeTarget "StringPrefixSearchIndexIntegrationTests" */;
+			buildPhases = (
+				3D19F754222C18880002C161 /* Sources */,
+				3D19F755222C18880002C161 /* Frameworks */,
+				3D19F756222C18880002C161 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D19F75F222C18880002C161 /* PBXTargetDependency */,
+			);
+			name = StringPrefixSearchIndexIntegrationTests;
+			productName = StringPrefixSearchIndexIntegrationTests;
+			productReference = 3D19F758222C18880002C161 /* StringPrefixSearchIndexIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,8 +222,12 @@
 				TargetAttributes = {
 					3D19F729222C17530002C161 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					3D19F732222C17530002C161 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3D19F757222C18880002C161 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -168,6 +246,7 @@
 			targets = (
 				3D19F729222C17530002C161 /* StringPrefixSearchIndex */,
 				3D19F732222C17530002C161 /* StringPrefixSearchIndexTests */,
+				3D19F757222C18880002C161 /* StringPrefixSearchIndexIntegrationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +263,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D19F749222C17E00002C161 /* cities.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D19F756222C18880002C161 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D19F76B222C19C20002C161 /* cities.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +282,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D19F745222C17770002C161 /* PrefixBinarySearchAlgorithm.swift in Sources */,
+				3D19F747222C17970002C161 /* StringPrefixSearchIndex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +291,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D19F739222C17530002C161 /* StringPrefixSearchIndexTests.swift in Sources */,
+				3D19F74E222C18150002C161 /* CitiesSearchIndexTest.swift in Sources */,
+				3D19F751222C18410002C161 /* CityModelParser.swift in Sources */,
+				3D19F752222C18540002C161 /* StringPrefixSearchIndex.swift in Sources */,
+				3D19F74D222C18150002C161 /* PrefixBinarySearchTest.swift in Sources */,
+				3D19F766222C18CE0002C161 /* CityModel.swift in Sources */,
+				3D19F753222C185A0002C161 /* PrefixBinarySearchAlgorithm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D19F754222C18880002C161 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D19F769222C19850002C161 /* PrefixBinarySearchAlgorithm.swift in Sources */,
+				3D19F76A222C198F0002C161 /* CityModelParser.swift in Sources */,
+				3D19F768222C19830002C161 /* StringPrefixSearchIndex.swift in Sources */,
+				3D19F767222C197A0002C161 /* CityModel.swift in Sources */,
+				3D19F764222C189D0002C161 /* CitiesSearchIndexIntegrationTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +319,11 @@
 			isa = PBXTargetDependency;
 			target = 3D19F729222C17530002C161 /* StringPrefixSearchIndex */;
 			targetProxy = 3D19F735222C17530002C161 /* PBXContainerItemProxy */;
+		};
+		3D19F75F222C18880002C161 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D19F729222C17530002C161 /* StringPrefixSearchIndex */;
+			targetProxy = 3D19F75E222C18880002C161 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -341,6 +453,7 @@
 		3D19F73F222C17530002C161 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +471,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.meldehairy.StringPrefixSearchIndex;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +480,7 @@
 		3D19F740222C17530002C161 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +506,7 @@
 		3D19F742222C17530002C161 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 656PJL646M;
 				INFOPLIST_FILE = StringPrefixSearchIndexTests/Info.plist;
@@ -409,6 +525,7 @@
 		3D19F743222C17530002C161 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 656PJL646M;
 				INFOPLIST_FILE = StringPrefixSearchIndexTests/Info.plist;
@@ -418,6 +535,42 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.meldehairy.StringPrefixSearchIndexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D19F761222C18880002C161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 656PJL646M;
+				INFOPLIST_FILE = StringPrefixSearchIndexIntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.meldehairy.StringPrefixSearchIndexIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D19F762222C18880002C161 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 656PJL646M;
+				INFOPLIST_FILE = StringPrefixSearchIndexIntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.meldehairy.StringPrefixSearchIndexIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,6 +603,15 @@
 			buildConfigurations = (
 				3D19F742222C17530002C161 /* Debug */,
 				3D19F743222C17530002C161 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D19F760222C18880002C161 /* Build configuration list for PBXNativeTarget "StringPrefixSearchIndexIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D19F761222C18880002C161 /* Debug */,
+				3D19F762222C18880002C161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
