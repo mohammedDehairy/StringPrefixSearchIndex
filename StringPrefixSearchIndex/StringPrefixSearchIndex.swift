@@ -46,7 +46,7 @@ final public class StringPrefixSearchIndex {
         }
     }
 
-    func findAll(withPrefix prefix: String, completion: @escaping (([SearchableByString]) -> Void)) {
+    public func findAll(withPrefix prefix: String, completion: @escaping (([SearchableByString]) -> Void)) {
         queue.async { [weak self] in
             self?._findAll(withPrefix: prefix, completion: completion)
         }
