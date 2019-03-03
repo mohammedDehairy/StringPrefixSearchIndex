@@ -14,8 +14,8 @@ protocol SearchableByString {
     var searchableString: String { get }
 }
 
-final class PrefixBinarySearchAlgorithm: PrefixSearchAlgorithm {
-    var array: [SearchableByString] = []
+final public class PrefixBinarySearchAlgorithm: PrefixSearchAlgorithm {
+    private var array: [SearchableByString] = []
     
     init(array: [SearchableByString]) {
         self.array = sort(array: array)

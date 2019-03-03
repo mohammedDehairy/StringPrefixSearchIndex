@@ -5,12 +5,12 @@
 
 import Foundation
 
-public protocol PrefixSearchAlgorithmProvider {
+protocol PrefixSearchAlgorithmProvider {
     func create() -> PrefixSearchAlgorithm
 }
 
-public struct DefaultPrefixSearchAlgorithmProvider: PrefixSearchAlgorithmProvider {
-    func create() -> PrefixSearchAlgorithm {
+struct DefaultPrefixSearchAlgorithmProvider: PrefixSearchAlgorithmProvider {
+    public func create() -> PrefixSearchAlgorithm {
         return PrefixBinarySearchAlgorithm()
     }
 }
@@ -19,6 +19,10 @@ final class StringPrefixSearchIndex {
     private let searchAlgorithmProvider: PrefixSearchAlgorithmProvider
     private let queue = DispatchQueue(label: "serial_queue")
     private var searchAlgorithms: [PrefixSearchAlgorithm] = []
+    
+    public convenience init(list: [SearchableByString]) {
+        self.init(list: list, searchAlgorithmProvider: DefaultPrefixSearchAlgorithmProvider())
+    }
 
     init(list: [SearchableByString], searchAlgorithmProvider: PrefixSearchAlgorithmProvider) {
         self.searchAlgorithmProvider = searchAlgorithmProvider
