@@ -10,7 +10,7 @@ protocol PrefixSearchAlgorithm {
     func findAll(WithPrefix prefix: String) -> [SearchableByString]
 }
 
-protocol SearchableByString {
+public protocol SearchableByString {
     var searchableString: String { get }
 }
 
