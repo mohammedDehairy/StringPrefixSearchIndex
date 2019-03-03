@@ -1,0 +1,7 @@
+language: objective-c
+osx_image: xcode10.1
+xcode_project: StringPrefixSearchIndex.xcodeproj
+xcode_scheme:
+  - StringPrefixSearchIndex
+  - StringPrefixSearchIndexIntegrationTests
+xcode_destination: platform=iOS Simulator,name=iPhone X
