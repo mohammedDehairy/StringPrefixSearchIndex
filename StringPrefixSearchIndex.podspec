@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "StringPrefixSearchIndex"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "String search index by prefix."
-  s.ios.deployment_target = "12.1"
+  s.ios.deployment_target = "10.0"
   s.swift_version = "4.2"
 
   # This description is used to generate tags and improve search results.
