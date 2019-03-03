@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "StringPrefixSearchIndex"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "String search index by prefix."
   s.ios.deployment_target = "10.0"
   s.swift_version = "4.2"
