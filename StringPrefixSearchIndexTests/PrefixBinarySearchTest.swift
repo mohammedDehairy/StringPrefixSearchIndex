@@ -12,7 +12,7 @@ struct SearchableByStringMock: SearchableByString {
 class PrefixBinarySearchTest: XCTestCase {
 
     func test_find_all_strings_with_prefix() {
-        let testList = ["Alabama", "Alaska", "Albania", "Switzerland", "Sweden", "Egypt", "Ethiopia", "USA", "Uganda", "Uganda", "uganda"].map { name in
+        let testList = ["Alabama", "Alaska", "Albania", "SSLV | Demo 2", "SSLV | Demo 1", "Smart", "Egypt", "Ethiopia", "USA", "Uganda", "Uganda", "uganda"].map { name in
             return SearchableByStringMock(searchableString: name)
         }
         let sut = PrefixBinarySearchAlgorithm(array: testList)
@@ -24,8 +24,8 @@ class PrefixBinarySearchTest: XCTestCase {
         let expectedList2 = ["Egypt", "Ethiopia"].sorted()
         XCTAssertEqual(result2, expectedList2)
         
-        let result3 = sut.findAll(WithPrefix: "Sw").map { $0.searchableString }
-        let expectedList3 = ["Switzerland", "Sweden"].sorted()
+        let result3 = sut.findAll(WithPrefix: "SS").map { $0.searchableString }
+        let expectedList3 = ["SSLV | Demo 2", "SSLV | Demo 1"].sorted()
         XCTAssertEqual(result3, expectedList3)
         
         let result4 = sut.findAll(WithPrefix: "U").map { $0.searchableString }
@@ -36,7 +36,7 @@ class PrefixBinarySearchTest: XCTestCase {
         XCTAssertEqual(result5, [])
         
         let result6 = sut.findAll(WithPrefix: "").map { $0.searchableString }
-        let expectedList6 = ["Alabama", "Alaska", "Albania", "Switzerland", "Sweden", "Egypt", "Ethiopia", "USA", "Uganda", "Uganda", "uganda"].sorted()
+        let expectedList6 = ["Alabama", "Alaska", "Albania", "SSLV | Demo 2", "SSLV | Demo 1", "Smart", "Egypt", "Ethiopia", "USA", "Uganda", "Uganda", "uganda"].sorted()
         XCTAssertEqual(result6, expectedList6)
     }
     

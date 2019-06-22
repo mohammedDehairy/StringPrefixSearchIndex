@@ -14,7 +14,7 @@ public protocol SearchableByString {
     var searchableString: String { get }
 }
 
-final public class PrefixBinarySearchAlgorithm: PrefixSearchAlgorithm {
+final class PrefixBinarySearchAlgorithm: PrefixSearchAlgorithm {
     private var array: [SearchableByString] = []
     
     init(array: [SearchableByString]) {
@@ -31,7 +31,7 @@ final public class PrefixBinarySearchAlgorithm: PrefixSearchAlgorithm {
     
     private func sort(array: [SearchableByString]) -> [SearchableByString] {
         return array.sorted { item1, item2 in
-            return item1.searchableString < item2.searchableString
+            return item1.searchableString.lowercased() < item2.searchableString.lowercased()
         }
     }
     
@@ -44,10 +44,10 @@ final public class PrefixBinarySearchAlgorithm: PrefixSearchAlgorithm {
         // upward and downward starting at the found item to get the rest of the items
         // with the same prefix
         
-        var endIndex = array.endIndex
+        var endIndex = array.endIndex - 1
         var currentIndex = -1
         var foundItem: SearchableByString?
-        while startIndex < endIndex {
+        while startIndex <= endIndex {
             currentIndex = (endIndex + startIndex) / 2
             let currentItem = array[currentIndex]
             if currentItem.searchableString.lowercased().hasPrefix(prefix) {
